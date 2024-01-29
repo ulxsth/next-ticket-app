@@ -1,10 +1,14 @@
 import React from 'react'
 import DeleteBlock from './DeleteBlock'
+import PriorityDisplay from './PriorityDisplay'
 
 const TicketCard = () => {
   return (
-    <DeleteBlock />
-  )
+    <div>
+      <DeleteBlock />
+      <PriorityDisplay />
+    </div>
+  );
 }
 
 export default TicketCard
