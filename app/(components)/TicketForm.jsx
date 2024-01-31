@@ -28,7 +28,7 @@ const TicketForm = () => {
     <div className="flex justify-center">
       <form>
         <h3>Create Your Ticket</h3>
-        <label htmlFor="Title"></label>
+        <label htmlFor="Title">Title</label>
         <input
           id="title"
           name="title"
