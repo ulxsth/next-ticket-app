@@ -6,11 +6,10 @@ const getTicketById = async (id) => {
     const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
       cache: "no-store"
     })
+    return res.json();
   } catch (error) {
     throw new Error("Failed to get ticket.")
   }
-
-  return res.json();
 }
 
 const TicketPage = async ({ params }) => {
@@ -18,7 +17,7 @@ const TicketPage = async ({ params }) => {
   let updateTicketData = {};
 
   if (EDITMODE) {
-    updateTicketData = await getTicketById(param.id);
+    updateTicketData = await getTicketById(params.id);
     console.log(updateTicketData)
   }
   return (
