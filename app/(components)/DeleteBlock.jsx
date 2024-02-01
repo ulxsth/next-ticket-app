@@ -21,7 +21,7 @@ const DeleteBlock = ({id}) => {
     <FontAwesomeIcon
       icon={faX}
       className="text-red-400 hover:cursor-pointer hover:text-red-200"
-      onClick={deleteTicket()}
+      onClick={deleteTicket}
     />
   );
 };
